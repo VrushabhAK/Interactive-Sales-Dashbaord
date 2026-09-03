@@ -32,7 +32,7 @@ public with sharing class SalesDashboardController {
 
         oppQuery += ' ORDER BY CloseDate DESC LIMIT 1000';
 
-        List<Opportunity> opportunities = Database.query(oppQuery);
+        List<Opportunity> opportunities = Database.query(oppQuery); 
 
         Integer openOpps = 0;
         Integer wonDeals = 0;

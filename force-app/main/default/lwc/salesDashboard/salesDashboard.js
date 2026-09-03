@@ -23,6 +23,9 @@ export default class SalesDashboard extends LightningElement {
     dateRange = 'LAST_30_DAYS';
     showCustomDates = false;
 
+    myName = '';
+    myCustomInput = '';
+
     wiredResult;
 
     stageOptions = [
@@ -220,4 +223,13 @@ export default class SalesDashboard extends LightningElement {
             ? 'metric-green'
             : 'metric-orange';
     }
+
+    handleNameChange(event) {
+        this.myName = event.detail;
+    }
+
+    handleInputChange(event){
+        this.myCustomInput = event.detail;
+    }
+
 }

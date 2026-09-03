@@ -1,10 +1,12 @@
 <template>
 
-    <div class="slds-page-header">
+
+    <div class="slds-page-header" >
         <h1 class="slds-text-heading_large">
             Interactive Sales Dashboard
         </h1>
     </div>
+
 
 <lightning-card>
 
@@ -14,7 +16,7 @@
 
             <div class="slds-grid slds-gutters slds-grid_vertical-align-end">
 
-                <div class="slds-col slds-size_3-of-12">
+                <div class="slds-col slds-size_2-of-12">
 
                     <lightning-combobox
                         label="Date Range"
@@ -25,7 +27,7 @@
 
                 </div>
 
-                <div class="slds-col slds-size_3-of-12">
+                <div class="slds-col slds-size_2-of-12">
 
                     <lightning-combobox
                         label="Stage"
@@ -36,7 +38,7 @@
 
                 </div>
 
-                <div class="slds-col slds-size_3-of-12">
+                <div class="slds-col slds-size_2-of-12">
 
                     <lightning-combobox
                         label="Owner"
@@ -47,7 +49,7 @@
 
                 </div>
 
-                <div class="slds-col slds-size_3-of-12">
+                <div class="slds-col slds-size_2-of-12">
 
                     <lightning-button
                         variant="brand"
@@ -55,6 +57,18 @@
                         onclick={handleRefresh}>
                     </lightning-button>
 
+                </div>
+                
+                <div
+                    class="slds-col slds-size_2-of-12
+                        slds-align-bottom">
+                    <b>{myName}</b>
+                </div>
+
+                <div
+                    class="slds-col slds-size_2-of-12
+                        slds-align-bottom" >
+                    <b>{myCustomInput}</b>
                 </div>
 
             </div>
@@ -65,7 +79,7 @@
 
             <div class="slds-grid slds-gutters slds-grid_vertical-align-end">
 
-                <div class="slds-col slds-size_2-of-12">
+                <div class="slds-col slds-size_1.5-of-12">
 
                     <lightning-combobox
                         label="Date Range"
@@ -76,7 +90,7 @@
 
                 </div>
 
-                <div class="slds-col slds-size_2-of-12">
+                <div class="slds-col slds-size_1.5-of-12">
 
                     <lightning-input
                         type="date"
@@ -87,7 +101,7 @@
 
                 </div>
 
-                <div class="slds-col slds-size_2-of-12">
+                <div class="slds-col slds-size_1.5-of-12">
 
                     <lightning-input
                         type="date"
@@ -98,7 +112,7 @@
 
                 </div>
 
-                <div class="slds-col slds-size_2-of-12">
+                <div class="slds-col slds-size_1.5-of-12">
 
                     <lightning-combobox
                         label="Stage"
@@ -109,7 +123,7 @@
 
                 </div>
 
-                <div class="slds-col slds-size_2-of-12">
+                <div class="slds-col slds-size_1.5-of-12">
 
                     <lightning-combobox
                         label="Owner"
@@ -128,6 +142,11 @@
                         onclick={handleRefresh}>
                     </lightning-button>
 
+                </div>
+
+                <div class="slds-col slds-size_2-of-12
+                        slds-align-bottom">
+                    <b>{myName}</b>
                 </div>
 
             </div>
@@ -166,6 +185,7 @@
                 <p>Pipeline Revenue</p>
             </c-metric-card>
         </div>
+
 
     </div>
 
