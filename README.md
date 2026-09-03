@@ -247,15 +247,6 @@ Provides filtering by:
 
 ---
 
-## GitHub Repository
-
-Repository URL:
-
-```text
-https://github.com/Darshan4569/SalesDashboard
-```
-
----
 
 ## Future Enhancements
 
